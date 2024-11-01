@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/055e7eb7-290c-444d-85ee-81c05920a108/deploy-status?branch=)](https://app.netlify.com/sites/salmaanm/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/055e7eb7-290c-444d-85ee-81c05920a108/deploy-status?branch=main)](https://app.netlify.com/sites/salmaanm/deploys)
 
 # React + Vite
 
