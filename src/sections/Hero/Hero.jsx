@@ -9,7 +9,6 @@ import githubDark from '../../assets/github-dark.svg';
 import linkedinLight from '../../assets/linkedin-light.svg';
 import linkedinDark from '../../assets/linkedin-dark.svg';
 
-import CV from '../../assets/cv.pdf'
 import { useTheme } from '../../common/ThemeContext';
 function Hero() {
    const { theme,toggleTheme } = useTheme();
@@ -47,11 +46,16 @@ function Hero() {
       </span>
       <p className={styles.description}>
         With a passion for developing software products</p>
-      <a href={CV} download>
-        <button className='hover'>
-          Resume
-        </button>
-      </a>
+      <a 
+  href="https://drive.google.com/uc?export=download&id=1R4wFMjo0Lnad4boIR1C9US0XH90m11Ul" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <button className='hover'>
+    Resume
+  </button>
+</a>
+
     </div>
 
   </section> 
