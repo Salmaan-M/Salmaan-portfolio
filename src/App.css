@@ -8,7 +8,7 @@
   --footer-text-color: #888;
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --background-color: #0f2027;
   --btn-color: #fff;
   --btn-text-color: #222;
@@ -39,7 +39,7 @@ body::after {
 body::before {
   width: 400px;
   height: 400px;
-  background: #98c1ff;   /* light blue */
+  background: #98c1ff; /* light blue */
   top: -120px;
   left: -120px;
 }
@@ -47,17 +47,17 @@ body::before {
 body::after {
   width: 500px;
   height: 500px;
-  background: #ffb3c1;   /* soft pink */
+  background: #ffb3c1; /* soft pink */
   bottom: -150px;
   right: -150px;
 }
 
 /* 🔹 Dark mode overrides for glowing circles */
-[data-theme='dark'] body::before {
+[data-theme="dark"] body::before {
   background: #1e3c72;
 }
 
-[data-theme='dark'] body::after {
+[data-theme="dark"] body::after {
   background: #2a5298;
 }
 
@@ -76,20 +76,24 @@ p {
   padding: 0;
 }
 
-h2, h3, p {
-  font-family: 'Roboto Mono', monospace;
+h2,
+h3,
+p {
+  font-family: "Roboto Mono", monospace;
 }
 
-h1, h2 {
+h1,
+h2 {
   text-transform: uppercase;
 }
 
-h2, h3 {
+h2,
+h3 {
   font-size: 20px;
 }
 
 h1 {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 32px;
 }
 
