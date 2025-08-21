@@ -1,28 +1,64 @@
-:root{
-  --background-color:#fff;
-  --btn-color:#0987f2;
-  --btn-text-color:#fff;
-  --project-card-bg:#ffffff00;
-  --text-color:#222;
-  --form-text-color:#555;
-  --footer-text-color:#888;
+:root {
+  --background-color: #fff;
+  --btn-color: #0987f2;
+  --btn-text-color: #fff;
+  --project-card-bg: #ffffff00;
+  --text-color: #222;
+  --form-text-color: #555;
+  --footer-text-color: #888;
 }
 
-[data-theme='dark']{
-  --background-color:#222;
-  --btn-color:#fff;
-  --btn-text-color:#222;
-  --project-card-bg:#fff;
-  --text-color:#fff;
-  --form-text-color:#fff;
-  --footer-text-color:#bbb;
+[data-theme='dark'] {
+  --background-color: #0f2027;
+  --btn-color: #fff;
+  --btn-text-color: #222;
+  --project-card-bg: #fff;
+  --text-color: #fff;
+  --form-text-color: #fff;
+  --footer-text-color: #bbb;
 }
 
-body{
-  background-color: var(--background-color);
-  display: flex;
-  justify-content: center;
+body {
+  background: var(--background-color);
   margin: 0 auto 60px;
+  position: relative;
+  overflow-x: hidden; /* ✅ only hides sideways overflow, scrolling works */
+}
+
+/* 🔹 Glowing circles for LIGHT MODE */
+body::before,
+body::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.6;
+  z-index: -1;
+}
+
+body::before {
+  width: 400px;
+  height: 400px;
+  background: #98c1ff;   /* light blue */
+  top: -120px;
+  left: -120px;
+}
+
+body::after {
+  width: 500px;
+  height: 500px;
+  background: #ffb3c1;   /* soft pink */
+  bottom: -150px;
+  right: -150px;
+}
+
+/* 🔹 Dark mode overrides for glowing circles */
+[data-theme='dark'] body::before {
+  background: #1e3c72;
+}
+
+[data-theme='dark'] body::after {
+  background: #2a5298;
 }
 
 #root {
@@ -34,69 +70,69 @@ body{
 h1,
 h2,
 h3,
-p{
+p {
   color: var(--text-color);
   margin: 0;
   padding: 0;
 }
 
-h2, h3, p{
-  font-family:'Roboto Mono', monospace;
+h2, h3, p {
+  font-family: 'Roboto Mono', monospace;
 }
 
-h1,h2{
+h1, h2 {
   text-transform: uppercase;
 }
 
-h2,h3{
+h2, h3 {
   font-size: 20px;
 }
 
-h1{
+h1 {
   font-family: 'Rubik', sans-serif;
-  font-family: 32px;
+  font-size: 32px;
 }
 
-p{
+p {
   font-size: 16px;
   font-weight: 300;
 }
 
-.sectionTitle{
+.sectionTitle {
   margin-bottom: 30px;
 }
 
-.hover{
-  cursor:pointer;
+.hover {
+  cursor: pointer;
 }
 
-@media(width >= 800px){
-  #root{
+@media (width >= 800px) {
+  #root {
     gap: 100px;
   }
-  h1{
+  h1 {
     font-size: 40px;
   }
-  h2,h3{
+  h2, h3 {
     font-size: 24px;
   }
-  p{
-    font-size:20px ;
+  p {
+    font-size: 20px;
   }
 
-  .sectionTitle{
+  .sectionTitle {
     margin-bottom: 60px;
   }
 
-  @media(width >= 1400px){
-    #root{
+  @media (width >= 1400px) {
+    #root {
       gap: 200px;
     }
-    h1{
+    h1 {
       font-size: 48px;
     }
-  
-    .sectionTitle{
+
+    .sectionTitle {
       margin-bottom: 75px;
     }
   }
