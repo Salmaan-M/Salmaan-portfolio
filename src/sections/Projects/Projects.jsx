@@ -1,8 +1,8 @@
 import styles from './ProjectsStyles.module.css';
 import viberr from '../../assets/viberr.png';
-import freshBurger from '../../assets/fresh-burger.png'
-import hipsster from '../../assets/hipsster.png';
-import fitlift from '../../assets/fitlift.png'
+import superchat from '../../assets/superchat.png'
+import weatherapp from '../../assets/weatherapp.png';
+import todolist from '../../assets/todolist.png'
 import ProjectCard from '../../common/ProjectCard';
 
 function Projects() {
@@ -17,22 +17,22 @@ function Projects() {
           p="Ebookstore website"
         />
         <ProjectCard 
-          src={freshBurger} 
-          link="https://github.com/Salmaan-M/ebookstore"
-          h3="Eatables"
-          p="Restuarant landing page"
+          src={superchat} 
+          link="https://github.com/Salmaan-M/superchat"
+          h3="SuperChat"
+          p="Chat Application"
         />
         <ProjectCard 
-          src={hipsster} 
-          link="https://github.com/Salmaan-M/ebookstore"
-          h3="Tic Tac Toe"
-          p="Game"
+          src={weatherapp} 
+          link="https://github.com/Salmaan-M/weather-app"
+          h3="Weather App"
+          p="Weather forcast"
         />
         <ProjectCard 
-          src={fitlift} 
-          link="https://github.com/Salmaan-M/ebookstore"
-          h3="Fitlift"
-          p="Gym website"
+          src={todolist} 
+          link="https://github.com/Salmaan-M/my-todo-app"
+          h3="Todo App"
+          p="Todo Application"
         />
       </div>
     </section>
