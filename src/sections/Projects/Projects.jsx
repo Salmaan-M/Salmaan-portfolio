@@ -26,7 +26,7 @@ function Projects() {
           src={weatherapp} 
           link="https://github.com/Salmaan-M/weather-app"
           h3="Weather App"
-          p="Weather forcast"
+          p="Weather forecast"
         />
         <ProjectCard 
           src={todolist} 
